@@ -30,8 +30,16 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 w-full z-[9999] px-4 md:px-6 py-3
           transition-all duration-500 ease-in-out transform
-          ${mounted ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
-          ${scrolled ? "bg-white/70 backdrop-blur-lg shadow-lg" : "bg-transparent"}
+          ${
+            mounted
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-full opacity-0"
+          }
+          ${
+            scrolled
+              ? "bg-white/70 backdrop-blur-lg shadow-lg"
+              : "bg-transparent"
+          }
         `}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -63,13 +71,13 @@ export default function Navbar() {
               href="#about"
               className="text-gray-700 hover:text-gray-900 font-semibold transition"
             >
-              Company
+              About Us
             </Link>
             <Link
               href="#services"
               className="text-gray-700 hover:text-gray-900 font-semibold transition"
             >
-              Product
+              Services
             </Link>
             <Link
               href="#footer"
@@ -127,7 +135,11 @@ export default function Navbar() {
         className={`
           fixed left-0 w-full bg-white shadow-lg transform
           transition-all duration-300 ease-in-out rounded-b-2xl
-          ${mobileMenuOpen ? "translate-y-[80px] opacity-100" : "-translate-y-full opacity-0"}
+          ${
+            mobileMenuOpen
+              ? "translate-y-[80px] opacity-100"
+              : "-translate-y-full opacity-0"
+          }
           md:hidden z-[9998] top-0
         `}
       >
@@ -168,7 +180,7 @@ export default function Navbar() {
         className={`
           fixed inset-0 bg-black/50 md:hidden z-[9997] top-[80px]
           transition-all duration-300 ease-in-out
-          ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
+          ${mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}
         `}
         onClick={() => setMobileMenuOpen(false)}
       />
