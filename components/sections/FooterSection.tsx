@@ -14,9 +14,12 @@ const FooterSection = () => {
   ];
   const servicesLinks = [
     { href: "/#cloud-services", label: "Cloud Services" },
-    { href: "/#custom-software-development", label: "Custom Software Development" },
+    {
+      href: "/#custom-software-development",
+      label: "Custom Software Development",
+    },
     { href: "/#web-and-mobile-development", label: "Web & Mobile Development" },
-    { href: "/#managed-it-support", label: "Managed IT Support" }
+    { href: "/#managed-it-support", label: "Managed IT Support" },
   ];
 
   return (
@@ -110,7 +113,7 @@ const FooterSection = () => {
                   href="mailto:franzeecalleja@gmail.com"
                   className="hover:text-purple-300 transition-colors duration-200"
                 >
-                  franzeecalleja@gmail.com
+                  ellipsensedevs@gmail.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -132,7 +135,7 @@ const FooterSection = () => {
                   href="tel:+639946948997"
                   className="hover:text-purple-300 transition-colors duration-200"
                 >
-                  +639946948997
+                  +639628580637
                 </a>
               </li>
               <li className="flex items-start">
